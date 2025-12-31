@@ -653,23 +653,6 @@ section {
   border-radius: inherit;
 }
 
-.about-section::before {
-  content: "";
-  position: absolute;
-  top: -50px;
-  right: -50px;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(
-    circle,
-    rgba(0, 200, 83, 0.15) 0%,
-    transparent 70%
-  );
-  border-radius: 50%;
-  z-index: -1;
-  filter: blur(40px);
-}
-
 .about-section::after {
   content: "";
   position: absolute;
@@ -1070,6 +1053,49 @@ section {
    Responsive Utilities
    =================================== */
 
+@media (max-width: 991px) {
+  .nav-link.active::after {
+    display: none;
+  }
+  .navbar-toggler,
+  .navbar-toggler:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    transition: all 0.3s ease-in-out;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .navbar-toggler.clicked .navbar-toggler-icon {
+    transition: all 0.3s ease-in-out;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M6 6L24 24M6 24L24 6'/%3e%3c/svg%3e");
+  }
+
+  .navbar-collapse {
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    background: white;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+border-top: 1px solid #ddd;
+  }
+  .navbar-collapse > ul {
+    max-width: 720px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .navbar-collapse.show {
+    transform: translateX(0%);
+  }
+}
+
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem;
@@ -1091,8 +1117,10 @@ section {
     padding: 50px 0;
   }
 
-  .nav-link.active::after {
-    display: none;
+  .navbar-collapse > ul {
+    max-width: 540px;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
