@@ -139,7 +139,7 @@ function formatSpreadsheet() {
 
   // Format header row
   var headerRange = sheet.getRange(1, 1, 1, 8);
-  headerRange.setBackground('#2d8659');
+  headerRange.setBackground('#163f63');
   headerRange.setFontColor('#ffffff');
   headerRange.setFontWeight('bold');
   headerRange.setHorizontalAlignment('center');
