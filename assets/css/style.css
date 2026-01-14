@@ -782,6 +782,10 @@ section {
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.icon-box img {
+  max-width: 65px;
+}
+
 .expertise-card:hover .icon-box {
   transform: scale(1.2) rotateY(360deg);
 }
