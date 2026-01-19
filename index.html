@@ -3,13 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HVACPro - Premium Air Conditioning Solutions</title>
+    <title>HVACPro - Premium Air Conditioning Solutions | Ducted & Multi-Split Systems</title>
     <meta
       name="description"
-      content="HVACPro offers premium ducted, mulit-split air conditioning systems, water heat pump, premium solar panels and energy saving batteries. Contact us for the best HVAC solutions."
+      content="HVACPro offers premium ducted, multi-split air conditioning systems, water heat pumps, solar panels and energy-saving batteries in Victoria. Licensed installers with 7-year warranty. Get a quote today!"
     />
+    <meta name="keywords" content="HVAC, air conditioning, ducted AC, multi-split system, heat pump, solar panels, Victoria, Australia, Carrier, Panasonic, Toshiba" />
+    <meta name="author" content="HVACPro Air Solutions" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://hvacpro.com.au/" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="HVACPro - Premium Air Conditioning Solutions Victoria" />
+    <meta property="og:description" content="Victoria's trusted HVAC provider. Premium ducted & multi-split AC systems, heat pumps, and solar solutions with professional installation." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hvacpro.com.au/" />
+    <meta property="og:image" content="https://hvacpro.com.au/assets/images/hvacpro-logo.png" />
+    <meta property="og:locale" content="en_AU" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HVACPro - Premium Air Conditioning Solutions" />
+    <meta name="twitter:description" content="Victoria's trusted HVAC provider. Premium AC systems with professional installation." />
+    <meta name="twitter:image" content="https://hvacpro.com.au/assets/images/hvacpro-logo.png" />
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -31,6 +55,44 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "HVACPro Air Solutions",
+      "image": "https://hvacpro.com.au/assets/images/hvacpro-logo.png",
+      "@id": "https://hvacpro.com.au",
+      "url": "https://hvacpro.com.au",
+      "telephone": "+61-0457-567-092",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "14 Network Drive",
+        "addressLocality": "Truganina",
+        "addressRegion": "VIC",
+        "postalCode": "3029",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -37.8,
+        "longitude": 144.7
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/share/1BoywUnsdH/",
+        "https://www.instagram.com/hvacpro.au/"
+      ],
+      "description": "Victoria's trusted HVAC provider offering premium ducted and multi-split air conditioning systems, heat pumps, and solar solutions with professional installation."
+    }
+    </script>
   </head>
   <body>
     <!-- Preloader - Energy Saving Theme -->
@@ -110,11 +172,13 @@
     <header class="header-section sticky-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="index.html" aria-label="HVACPro Home">
             <img
               src="assets/images/hvacpro-logo.png"
-              alt="HVACPro Logo"
+              alt="HVACPro - Premium Air Conditioning Solutions Victoria"
               class="logo"
+              width="50"
+              height="50"
             />
           </a>
           <button
@@ -122,6 +186,9 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation menu"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -187,22 +254,21 @@
                   <div class="swiper-slide">
                     <div class="about-slide-wrapper">
                       <img
-                        src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop&q=80"
+                        src="assets/images/about-us-slider-image.jpeg"
                         alt="Professional HVAC Technician at Work"
-                        class="img-fluid"
+                        class="object-fit-contain"
                       />
-                      <div class="slide-caption">Professional Installation</div>
+                      <div class="slide-caption">Premium AC Systems</div>
                     </div>
                   </div>
-                  <!-- Slide 2: AC Unit Installation -->
+                  <!-- Slide 2: Professional Technician -->
                   <div class="swiper-slide">
                     <div class="about-slide-wrapper">
                       <img
-                        src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=800&h=600&fit=crop&q=80"
-                        alt="Modern Air Conditioning Unit"
-                        class="img-fluid"
+                        src="assets/images/about-us-slider-image-2.jpg"
+                        alt="Professional HVAC Technician at Work"
                       />
-                      <div class="slide-caption">Premium AC Systems</div>
+                      <div class="slide-caption">Professional Technicians</div>
                     </div>
                   </div>
                   <!-- Slide 3: Solar Panels -->
@@ -211,7 +277,6 @@
                       <img
                         src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&h=600&fit=crop&q=80"
                         alt="Solar Panel Installation"
-                        class="img-fluid"
                       />
                       <div class="slide-caption">Solar Energy Solutions</div>
                     </div>
@@ -222,7 +287,6 @@
                       <img
                         src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop&q=80"
                         alt="Satisfied Customer with New HVAC System"
-                        class="img-fluid"
                       />
                       <div class="slide-caption">Customer Satisfaction</div>
                     </div>
@@ -233,20 +297,8 @@
                       <img
                         src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&q=80"
                         alt="Energy Efficiency Analytics"
-                        class="img-fluid"
                       />
                       <div class="slide-caption">Energy Savings Analytics</div>
-                    </div>
-                  </div>
-                  <!-- Slide 6: Commercial Installation -->
-                  <div class="swiper-slide">
-                    <div class="about-slide-wrapper">
-                      <img
-                        src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&h=600&fit=crop&q=80"
-                        alt="Commercial HVAC Solutions"
-                        class="img-fluid"
-                      />
-                      <div class="slide-caption">Commercial Projects</div>
                     </div>
                   </div>
                 </div>
@@ -1149,17 +1201,11 @@
               needs.
             </p>
             <div class="social-links mt-3">
-              <a href="#" class="text-white me-3"
+              <a href="https://www.facebook.com/share/1BoywUnsdH/" target="_blank" rel="noopener noreferrer" class="text-white me-3"
                 ><i class="fab fa-facebook fa-lg"></i
               ></a>
-              <a href="#" class="text-white me-3"
-                ><i class="fab fa-twitter fa-lg"></i
-              ></a>
-              <a href="#" class="text-white me-3"
+              <a href="https://www.instagram.com/hvacpro.au/" target="_blank" rel="noopener noreferrer" class="text-white"
                 ><i class="fab fa-instagram fa-lg"></i
-              ></a>
-              <a href="#" class="text-white"
-                ><i class="fab fa-linkedin fa-lg"></i
               ></a>
             </div>
           </div>
@@ -1255,13 +1301,14 @@
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
     <!-- Swiper Initialization -->
-    <script>
+    <script defer>
+      document.addEventListener('DOMContentLoaded', function() {
       // Initialize Brand Logos Swiper
       var brandSwiper = new Swiper(".brandSwiper", {
         slidesPerView: 2,
@@ -1331,9 +1378,11 @@
         noSwiping: true,
         noSwipingClass: "swiper-slide",
       });
+      });
     </script>
 
-    <script>
+    <script defer>
+      document.addEventListener('DOMContentLoaded', function() {
       const swiperWrapper = document.querySelector(
         ".brandSwiper .swiper-wrapper"
       );
@@ -1361,6 +1410,7 @@
       }
 
       scroll();
+      });
 
       // // Optional: Pause on hover
       // document

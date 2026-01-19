@@ -15,7 +15,7 @@ const CF7_API_ENDPOINT = 'YOUR_CONTACT_FORM_7_API_ENDPOINT_HERE';
 // You can also use services like FormSpree, Netlify Forms, or your own backend
 const USE_ALTERNATIVE_ENDPOINT = true;
 // Added parameters: _captcha=false (no captcha), _template=box (AJAX friendly)
-const ALTERNATIVE_API_ENDPOINT = 'https://formsubmit.co/ajax/me.harshitjoshi@gmail.com';
+const ALTERNATIVE_API_ENDPOINT = 'https://formsubmit.co/ajax/hvacs@gmail.com';
 
 // ===================================
 // PRELOADER - Energy Saving Animation
