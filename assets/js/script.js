@@ -168,19 +168,29 @@ async function handleFormSubmit(form) {
             }
             form.reset();
             form.classList.remove('was-validated');
+
+            // Redirect to success page after brief delay
+            setTimeout(() => {
+                window.location.href = 'success-form.html';
+            }, 1500);
         } else {
             // Submit to Contact Form 7 API or Alternative Endpoint
             const response = await submitToAPI(endpoint, data);
 
             if (response.success) {
                 if (formMessage) {
-                    showSuccessMessage(formMessage, 'Thank you! Your inquiry has been submitted successfully. We will contact you soon.');
+                    showSuccessMessage(formMessage, 'Thank you! Your inquiry has been submitted successfully. Redirecting...');
                 }
                 form.reset();
                 form.classList.remove('was-validated');
 
                 // Optional: Send data to spreadsheet service
                 await sendToSpreadsheet(data);
+
+                // Redirect to success page after brief delay
+                setTimeout(() => {
+                    window.location.href = 'success-form.html';
+                }, 1500);
             } else {
                 throw new Error(response.message || 'Submission failed');
             }

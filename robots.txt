@@ -1,0 +1,38 @@
+# HVACPro Robots.txt - SEO Optimized
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /products.html
+Allow: /contact.html
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Disallow admin or private directories if any
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /.git/
+Disallow: /.vscode/
+
+# Sitemap location
+Sitemap: https://hvacpro.com.au/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots (optional - add specific bots if needed)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
