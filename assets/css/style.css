@@ -2011,3 +2011,92 @@ html {
     border-radius: 10px;
   }
 }
+
+/* ===================================
+   Floating Icon Wrapper
+   =================================== */
+.floating-icon-wrapper {
+  z-index: 1000;
+}
+
+.floating-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.floating-icon:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.floating-icon i {
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.floating-icon:hover i {
+  transform: scale(1.2);
+}
+
+/* WhatsApp Icon Styling */
+.whatsapp-icon {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: var(--white);
+}
+
+.whatsapp-icon:hover {
+  background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
+  color: var(--white);
+}
+
+/* Contact Form Icon Styling */
+.contact-icon {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+  color: var(--white);
+}
+
+.contact-icon:hover {
+  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+  color: var(--white);
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Adjustments for Floating Icons */
+@media (max-width: 768px) {
+  .floating-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .floating-icon-wrapper {
+    margin: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .floating-icon-wrapper {
+    margin: 0.75rem !important;
+  }
+}
