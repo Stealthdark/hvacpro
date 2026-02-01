@@ -163,24 +163,19 @@ async function handleFormSubmit(form) {
             // Demo mode - show success message without actual submission
             console.log('Form Data (Demo Mode):', data);
             await simulateAPICall(data);
-            if (formMessage) {
-                showSuccessMessage(formMessage, 'Demo Mode: Form submitted successfully! Check console for data.');
-            }
-            form.reset();
-            form.classList.remove('was-validated');
+
+            // Redirect to success page
+            window.location.href = 'success-form.html';
         } else {
             // Submit to Contact Form 7 API or Alternative Endpoint
             const response = await submitToAPI(endpoint, data);
 
             if (response.success) {
-                if (formMessage) {
-                    showSuccessMessage(formMessage, 'Thank you! Your inquiry has been submitted successfully. We will contact you soon.');
-                }
-                form.reset();
-                form.classList.remove('was-validated');
-
                 // Optional: Send data to spreadsheet service
                 await sendToSpreadsheet(data);
+
+                // Redirect to success page
+                window.location.href = 'success-form.html';
             } else {
                 throw new Error(response.message || 'Submission failed');
             }
